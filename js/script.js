@@ -6,7 +6,7 @@ const filterButton = document.getElementById("filterBtn");
 const deleteAllButton = document.getElementById("deleteAllBtn");
 const tableBody = document.querySelector("tbody");
 
-let todos = []; // Array untuk menyimpan semua todo
+let todos = []; 
 
 // Fungsi untuk render todo ke dalam tabel
 function renderTodos(list = todos) {
@@ -31,8 +31,8 @@ function renderTodos(list = todos) {
             <td>${todo.dueDate}</td>
             <td>${todo.status}</td>
             <td>
-                <button onclick="markDone(${index})">✅</button>
-                <button onclick="deleteTodo(${index})">🗑️</button>
+                <button onclick="markDone(${index})">✔</button>
+                <button onclick="deleteTodo(${index})">x</button>
             </td>
         `;
 
