@@ -8,12 +8,12 @@
   <body>
     <section class="container">
         <h1>TO DO LIST</h1>
-        <form action="">
+        <form>
             <input type="text" id="todo" name="todo" placeholder="Add a todo...">
             <input type="date" id="date" name="date"><br><br>
-            <button type="button">+</button>     
-            <button type="button">Filter</button>         
-            <button type="button">DELETE ALL</button>  
+            <button type="button" id="addBtn">+</button>     
+            <button type="button" id="filterBtn">Filter</button>         
+            <button type="button" id="deleteAllBtn">DELETE ALL</button>  
         </form>
     </section>
     <table style="border: 1px;">
@@ -25,11 +25,8 @@
             <th>ACTION</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <th>1</th>
-        </tr>
-    </tbody>
+    <tbody></tbody>
     </table>
   </body>
+  <script src="/js/script.js"></script>
 </html>
